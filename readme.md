@@ -15,36 +15,36 @@ Create new Ubuntu EC2 instance for installing Ansible, just open port 22.
 
 Update Repository by including the official project’s PPA
 
-sudo apt-get update
-sudo apt-add-repository -y ppa:ansible/ansible
+### sudo apt-get update
+### sudo apt-add-repository -y ppa:ansible/ansible
 
 
 
 then you need to refresh the package by executing the below command:
-sudo apt-get update
+### sudo apt-get update
 
 
 
 
 Now you can install Ansible:
-sudo apt-get install -y ansible
+### sudo apt-get install -y ansible
 
 
 
-sudo apt install python-pip -y
+### sudo apt install python-pip -y
  ( this is just comment -  Package manager for python)
 
 Install Boto Framework - AWS SDK
-sudo pip install boto boto3
+### sudo pip install boto boto3
 
  
 Ansible will access AWS resources using boto SDK.
 
-sudo apt-get install python-boto -y
-pip list boto | grep boto
+### sudo apt-get install python-boto -y
+### pip list boto | grep boto
 (the above command should display below output)
 Ignore warning in Red color.
 
 
  
-ansible --version
+### ansible --version
